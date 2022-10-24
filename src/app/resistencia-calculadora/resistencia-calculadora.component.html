@@ -1,0 +1,118 @@
+<br>
+<br>
+<div class="container mt-5">
+    <div class="row">
+        <div class="text-center mb-5" >
+                <h1>CALCULADORA DE RESISTENCIAS</h1>
+        </div>
+        <div class="col">
+            <label for="">Color 1</label>
+            <select class="form-select col-3" name="banda1" [(ngModel)]="banda1">
+                <option value="0"  class="negro" >Negro</option>
+                <option value="10" class="cafe" >Café</option>
+                <option value="20" class="rojo" >Rojo</option>
+                <option value="30" class="naranja" >Naranja</option>
+                <option value="40" class="amarillo" >Amarillo</option>
+                <option value="50" class="verde" >Verde</option>
+                <option value="60" class="azul" >Azul</option>
+                <option value="70" class="violeta" >Violeta</option>
+                <option value="80" class="gris" >Gris</option>
+                <option value="90" class="blanco" >Blanco</option>
+              </select>
+        </div>
+        <div class="col">
+            <label for="">Color 2</label>
+            <select class="form-select col-3" [(ngModel)]="banda2">
+                <option value="0" class="negro" >Negro</option>
+                <option value="1" class="cafe" >Café</option>
+                <option value="2" class="rojo" >Rojo</option>
+                <option value="3" class="naranja" >Naranja</option>
+                <option value="4" class="amarillo" >Amarillo</option>
+                <option value="5" class="verde" >Verde</option>
+                <option value="6" class="azul" >Azul</option>
+                <option value="7" class="violeta" >Violeta</option>
+                <option value="8" class="gris" >Gris</option>
+                <option value="9" class="blanco" >Blanco</option>
+              </select>
+        </div>
+        <div class="col">
+            <label for="">Color 3</label>
+            <select class="form-select col-3" [(ngModel)]="banda3">
+                <option value="1" class="negro">Negro</option>
+                <option value="10" class="cafe">Café</option>
+                <option value="100" class="rojo">Rojo</option>
+                <option value="1000" class="naranja">Naranja</option>
+                <option value="10000" class="amarillo">Amarillo</option>
+                <option value="100000" class="verde">Verde</option>
+                <option value="1000000" class="azul">Azul</option>
+                <option value="10000000" class="violeta">Violeta</option>
+                <option value="100000000" class="gris">Gris</option>
+                <option value="1000000000" class="blanco" >Blanco</option>
+              </select>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="">
+            <input type="radio" name="tolerancia" [(ngModel)]="tolerancia"  value="oro" class="form-check-input" id="flexRadioDefault2" >
+            <label for="" class="form-check-label">Oro</label>
+        </div>
+        <div class="">
+            <input type="radio" name="tolerancia" [(ngModel)]="tolerancia"  value="plata" class="form-check-input" id="flexRadioDefault2">
+            <label for="" class="form-check-label">Plata</label>
+        </div>
+        
+        <button class="btn btn-dark col-1 mt-3" (click)="calculadoraR()">Registrar</button>
+    </div>
+     
+    <div class="row mt-5">
+        <div class="card col me-2">
+            <div class="card-body">
+                <h4 class="card-title">Color 1</h4>
+                <br>
+                <h2 [style.background-color]="color" [style.color]="colorl">{{banda1}}</h2>
+            </div>
+        </div>
+        <div class="card col me-2">
+            <div class="card-body">
+                <h4 class="card-title">Color 2</h4>
+                <br>
+                <h2 [style.background-color]="color1" [style.color]="colorl1">{{banda2}}</h2>
+            </div>
+        </div>
+        <div class="card col me-2">
+            <div class="card-body">
+                <h4 class="card-title">Color 3</h4>
+                <br>
+                <h2 [style.background-color]="color2" [style.color]="colorl2">{{banda3}}</h2>
+            </div>
+        </div>
+        <div class="card col me-2">
+            <div class="card-body">
+                <h4 class="card-title">Tolerancia</h4>
+                <br>
+                <h2 [style.background-color]="color3" [style.color]="colorl3">{{tolerancia}}</h2>
+            </div>
+        </div>
+        <div class="card col me-2">
+            <div class="card-body">
+                <h4 class="card-title">Valor</h4>
+                <br>
+                <h2 class="card-text">{{homs}} Ω</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="card col me-2">
+            <div class="card-body">
+                <h4 class="card-title">Valor Máximo</h4>
+                <h2 class="card-text">{{tolMax}} Ω</h2>
+            </div>
+        </div>
+        <div class="card col me-2">
+            <div class="card-body">
+                <h4 class="card-title">Valor Mínimo</h4>
+                <h2 class="card-text"> {{tolMin}} Ω</h2>
+            </div>
+        </div>
+    </div>
+</div>

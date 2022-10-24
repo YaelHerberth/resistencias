@@ -1,0 +1,84 @@
+.negro{
+
+    background-color:black;
+    color: white;
+
+}
+.cafe{
+
+    background-color:brown;
+    color: white;
+    
+
+}
+.rojo{
+
+    background-color:red;
+    color: white;
+    
+
+}
+.naranja{
+
+    background-color:orange;
+    color: white;
+    
+
+}
+.amarillo{
+
+    background-color:yellow;
+    color: black;
+    
+
+}
+.verde{
+
+    background-color:green;
+    color: white;
+    
+
+}
+.azul{
+
+    background-color:blue;
+    color: white;
+    
+
+}
+.violeta{
+
+    background-color:violet;
+    color: white;
+    
+
+}
+.gris{
+
+    background-color:gray;
+    color: white;
+    
+
+}
+.blanco{
+
+    background-color:white;
+}
+
+#dorado{
+
+    color:gold;
+
+}
+#plateado{
+
+    color: silver;
+
+}
+
+#resistencia1{
+
+width: auto;
+height: auto;
+
+}
